@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['namespace' => 'App\Http\Controllers'], function () {
+    Route::get('/', 'RssController@showDeleteWordForm')->name('top');
+    Route::post('/', 'RssController@deleteWords')->name('delete.words');
 });
