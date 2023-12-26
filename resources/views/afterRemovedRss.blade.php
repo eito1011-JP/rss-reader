@@ -12,10 +12,10 @@
         text-align: center;
     }
     .result {
-        width: 50%; /* 画面の幅の50% */
-        height: 50%; /* 高さを300pxに設定 */
+        width: 50%;
+        height: 50%;
         border-style: solid;
-        resize: none; /* サイズ変更を不可に */
+        resize: none;
         overflow: auto;
         overscroll-behavior: none;
     }

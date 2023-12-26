@@ -43,7 +43,6 @@
                 inputFields.appendChild(urlDiv);
                 inputFields.appendChild(wordsDiv);
             });
-  // エラーを受け取ったら、該当のinputにエラーを表示するjavascriptを書く
 </script>
 <style>
   .mb-3 {
