@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'RssController@showDeleteWordForm')->name('top');
-    Route::post('/', 'RssController@deleteWords')->name('delete.words');
+    Route::post('/', 'RssController@RemoveWords')->name('remove.words');
 });
