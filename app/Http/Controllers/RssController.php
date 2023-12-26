@@ -14,13 +14,12 @@ class RssController extends Controller
     }
 
     /**
-     * Show Delete Word Form
+     * Show Remove Word Form
      *
-     * @param ShowDeleteWordFormRequest $showDeleteWordFormRequest
      */
-    public function showDeleteWordForm()
+    public function showRemoveWordForm()
     {
-        return view('showDeleteWordForm');
+        return view('showRemoveWordForm');
     }
 
     /**
