@@ -1,66 +1,15 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## 質問1
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 質問2
 
-## About Laravel
+### 大規模言語モデル(LLM)
+-------
+① 以前読んだ、SF小説と重なり、大規模言語モデルが社会に与える影響が大きいことを確信したから
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+大規模言語モデルといえば、ChatGPTで使われている技術でもあることは有名だが、ChatGPTを初めて触った時、私は小説の「月は無慈悲な夜の女王」に出てくるマイクが頭に浮かんだ。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+月は無慈悲な夜の女王はロバート・A・ハインラインのSF小説で物語の内容としては地球の植民地である月の住人のコンピューター技師 マニーが数人の仲間と汎用AIのマイクと共に地球から独立するというストーリーだ。マイクはスペックの高いコンピューター、かつ人工知能でCLIではなく自然言語による命令を理解することができ、まるで人間のように振る舞うことが出来る。ChatGPTも同様に自然言語による入力ができ、違和感のない文章でレスポンスを返してくれるという点などマイクと共通点のある部分が多いが、それだけではなく小説の中でマニーと数人の仲間たちがマイクに様々な助けを借りながら、革命を起こしたように少ないリソースで大きな影響力を生むことが出きるという点で非常に影響がある技術だと感じる。それは所詮、小説の中だけの話だと思う人もいるかもしれないが、SF小説で描かれているものが、現代で実装されているもの(潜水艦、3Dホログラム、3Dフードプリンター等)は多いし、また人間が他の動物と違って高度な文明(社会)を作ることができた理由の一つである思考を拡張することが出来る技術として、他の科学技術と比較しても重要度がとても高いと思うから。
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+② 他の分野に与える影響力が大きいから
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+大規模言語モデルの技術はChatGPT以外でも画像生成AIやデータ分析など様々な分野で使われている。例えば、画像生成AIの仕組みはText EncoderとImage Encoderの二つに分けることができる。まず入力されたプロンプトを凡そ単語(token)ごとに分け、それらのtokenをコンピューターが理解できるように2進数に変換する。そして入力されたtokenとマッチする画像を元にImage Encoderを使用し、ノイズを削除するなどして画像が生成されるが、このText Encoderの流れはChatGPTが入力されたプロンプトを元にレスポンスを返すプロセスと殆ど同じであり、これは大規模言語モデルの性能が上がれば、チャットボットツール、画像生成AI、データ分析ツール等の性能が直接的に向上することを意味する。つまり様々なツールや技術の基礎となる大規模言語モデルの発展が社会の様々な分野にもたらす影響が大きいと感じるため。
