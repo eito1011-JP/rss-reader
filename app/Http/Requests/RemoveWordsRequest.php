@@ -17,7 +17,7 @@ class RemoveWordsRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
-     * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
+     * @return array
      */
     public function rules(): array
     {
@@ -26,4 +26,12 @@ class RemoveWordsRequest extends FormRequest
             'remove_words.*' => 'nullable'
         ];
     }
+
+    public function attributes()
+{
+    return [
+        'url.*' => 'rss',
+        'remove_words.*' => '単語',
+    ];
+}
 }
