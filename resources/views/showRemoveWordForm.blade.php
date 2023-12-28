@@ -27,7 +27,7 @@
                 <p class="validation-msg">{{ $errors->all()[0] }}</p>
             @endif
             <button type="button" id="addBtn" class="btn btn-primary">追加</button>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">送信</button>
     </form>
     </body>
     <script>
