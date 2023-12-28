@@ -20,8 +20,13 @@
 <img width="816" alt="class-diagram" src="https://github.com/eito1011-JP/rss-reader/assets/84311368/0109ccad-ef67-4b0d-b73c-bd702499627e">
 
 ### デモ
+__トップ画面__
+<img width="1512" alt="demo-first" src="https://github.com/eito1011-JP/rss-reader/assets/84311368/8b477b05-2cc1-4278-9f53-a75ce370c16e">
 
+__トップ画面_追加ボタン押下__
+<img width="1512" alt="demo-second" src="https://github.com/eito1011-JP/rss-reader/assets/84311368/2b3fd5f9-1125-467c-89b2-3a1ccb97e2cc">
 
-https://github.com/eito1011-JP/rss-reader/assets/84311368/83ebe10f-91d0-4966-847b-40ac418a4e80
+__出力結果_文字列削除後__
+<img width="1512" alt="demo-third" src="https://github.com/eito1011-JP/rss-reader/assets/84311368/943d85a3-3e83-4828-82b5-146328d3188e">
 
 
