@@ -27,11 +27,11 @@ class RemoveWordsRequest extends FormRequest
         ];
     }
 
-    public function attributes()
-{
-    return [
-        'url.*' => 'rss',
-        'remove_words.*' => '単語',
-    ];
-}
+    public function messages()
+    {
+        return [
+            'url.*.required' => 'RSSの入力は必須です',
+            'url.*.url' => '有効なURLを入力してください',
+        ];
+    }
 }

@@ -18,10 +18,14 @@
                     <div class="mb-3">
                         <label for="remove-words" class="form-label">削除する単語</label>
                         <input class="remove-words" id="remove_words" type="text" name="remove_words[]" class="form-control" placeholder="backend frontend...">
+                        <div class="error-message" style="color: red;"></div>
                     </div>
                     <input type="checkbox" class="delete-checkbox" id="check_box" onclick="removeField(this)">
                 </div>
             </div>
+            @if ($errors->any())
+                <p class="validation-msg">{{ $errors->all()[0] }}</p>
+            @endif
             <button type="button" id="addBtn" class="btn btn-primary">追加</button>
             <button type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -63,5 +67,11 @@
     input#check_box {
         translate: -1rem -3.7rem;
     }
+    .validation-msg {
+        margin-left: 2rem;
+        translate: 0rem -2rem;
+        color: #ff0000;
+    }
+
 </style>
 </html>

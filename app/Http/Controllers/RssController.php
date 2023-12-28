@@ -31,8 +31,8 @@ class RssController extends Controller
     {
         $xmlDataArray = [];
         try {
-            foreach ($removeWordsRequest->url as $key => $url) {
-                $explodedWords = explode(" ", $removeWordsRequest->remove_words[$key]);
+            foreach ($removeWordsRequest->url as $index => $url) {
+                $explodedWords = explode(" ", $removeWordsRequest->remove_words[$index]);
                 $xml = simplexml_load_file($url);
                 $xmlString = $xml->asXML();
                 $convertedHtml = html_entity_decode($xmlString, ENT_QUOTES | ENT_XML1, 'UTF-8');
